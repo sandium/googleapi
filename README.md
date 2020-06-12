@@ -13,4 +13,5 @@ Now in Jupyter Notebook
 import os
 
 os.environ['http_proxy'] = "http://userid:password@proxy_IP:Proxy_Port" 
+
 os.environ['https_proxy'] = "https://userid:password@proxy_IP:Proxy_Port"
