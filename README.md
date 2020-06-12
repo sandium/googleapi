@@ -11,5 +11,6 @@ Note: I am having @ in my password so replaced @ with %40
 Now in Jupyter Notebook 
 
 import os
+
 os.environ['http_proxy'] = "http://userid:password@proxy_IP:Proxy_Port" 
 os.environ['https_proxy'] = "https://userid:password@proxy_IP:Proxy_Port"
