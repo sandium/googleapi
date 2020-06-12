@@ -48,7 +48,7 @@ for i in range(0, len(df)):
         Longitude=df.iat[i, df.columns.get_loc("Longitude")]
         ClientID=df.iat[i, df.columns.get_loc("Clientcode")]
         print(Latitude,Longitude)
-        UPDATE = ("UPDATE CORE.CUSTOMERDETAIL SET LATITUDE =?,LONGITUDE =? WHERE Clientcode=?")
+        UPDATE = ("UPDATE TEMP_CUSTOMER SET LATITUDE =?,LONGITUDE =? WHERE Clientcode=?")
         VALUES = (Latitude,Longitude,ClientID)
         conn.execute(UPDATE,VALUES)
         conn.commit()
